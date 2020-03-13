@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   db:
-    build: ./docker/postgres
+    image: postgres:12.2-alpine
     env_file:
       - .env
     environment:
